@@ -18,7 +18,7 @@ jobs:
           sudo apt-get install -y bc bison flex libssl-dev build-essential python3 zip unzip wget rsync
 
       - name: Apply OC patch
-        run: git apply oc_helio_g70.patch
+        run: git apply oc_helio_g70_v2_g75.patch
 
       - name: Build kernel
         run: |
