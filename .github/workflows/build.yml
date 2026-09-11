@@ -23,6 +23,7 @@ jobs:
       - name: Build kernel
         run: |
           chmod +x build.sh
+          export LD_LIBRARY_PATH="${PWD}/clang/lib64:${LD_LIBRARY_PATH}"
           ./build.sh
 
       - name: Publish as release
